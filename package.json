@@ -1,0 +1,34 @@
+{
+  "name": "proyectofinal-v3-bonasegla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha server.test.js",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "fork": "pm2 start server.js --name='ServerFork' --watch",
+    "cluster": "pm2 start server.js --name='ServerCluster' --watch -i max",
+    "forever": "forever start -w server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "express-session": "^1.17.3",
+    "graphql": "^16.6.0",
+    "mocha": "^10.0.0",
+    "mongoose": "^6.4.4",
+    "nodemailer": "^6.7.8",
+    "normalizr": "^3.6.2",
+    "socket.io": "^4.5.1"
+  }
+}
